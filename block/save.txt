@@ -1,0 +1,20 @@
+node 1
+pass 12345
+Public address of the key:   0x8B15D4F758e7a31D677E107b9d1D803D60b65d98
+
+node 2
+pass 12345
+Public address of the key:   0x90e0E2840d479350a179E27FB5E5EC68d6fc65a0
+
+network nm - mynet
+id 14333
+
+
+enode://480ff6363a6a49ad848aeb289644641c298ac6c6460cd82f976a757979fca8aea01e0d408c3a6c35068b18e80ffab9078b4d7d523de762101aaa8930735df41f@127.0.0.1:0?discport=30301
+
+
+geth --networkid 14333 --datadir .\ --bootnodes enode://480ff6363a6a49ad848aeb289644641c298ac6c6460cd82f976a757979fca8aea01e0d408c3a6c35068b18e80ffab9078b4d7d523de762101aaa8930735df41f@127.0.0.1:30301 --port 30303 --ipcdisable --syncmode full --rpc --allow-insecure-unlock --rpccorsdomain "*" --rpcport 8545 --unlock 0x8B15D4F758e7a31D677E107b9d1D803D60b65d98 --password .\password.txt --mine console
+
+geth --networkid 14333 --datadir .\ --bootnodes enode://480ff6363a6a49ad848aeb289644641c298ac6c6460cd82f976a757979fca8aea01e0d408c3a6c35068b18e80ffab9078b4d7d523de762101aaa8930735df41f@127.0.0.1:30301 --port 30304 --ipcdisable --syncmode full --rpc --allow-insecure-unlock --rpccorsdomain "*" --rpcport 8546 --unlock 0x90e0E2840d479350a179E27FB5E5EC68d6fc65a0 --password .\password.txt console
+
+ 
